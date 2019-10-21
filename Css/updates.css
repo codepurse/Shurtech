@@ -1,0 +1,298 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #FAFAFA;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 762px) {
+  .slanted {
+    background-color: transparent !important;
+    position: relative;
+    transform: perspective(0px) rotateY(0deg) !important;
+    width: 80px !important;
+    top: 0px;
+    padding: 0px;
+    height: auto !important;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+  .pmonth {
+    font-size: 2rem !important;
+    margin-top: 10px !important;
+  }
+  .weekdays {
+    padding: 4px 0px !important;
+  }
+  .calendar1 {
+    height: auto !important;
+  }
+  .pevents {
+    font-size: 20px !important;
+  }
+}
+
+
+.navbar {
+  background-color: #143a53;
+  padding: 20px;
+}
+
+.slanted {
+  background-color: #a12b2c;
+  -webkit-transform: perspective(300px) rotateX(-30deg);
+  -o-transform: perspective(300px) rotateX(-30deg);
+  -moz-transform: perspective(300px) rotateX(-30deg);
+  transform: perspective(300px) rotateX(-25deg);
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 10%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 350px;
+  height: 180px;
+  border: 0px;
+  z-index: 9;
+}
+
+.imglogo {
+  transform: rotate(0deg) !important;
+  margin-left: -10px;
+  -webkit-transform: perspective(300px) rotateX(-30deg);
+  -o-transform: perspective(300px) rotateX(-30deg);
+  -moz-transform: perspective(300px) rotateX(-30deg);
+  transform: perspective(300px) rotateX(-0deg) !important;
+}
+
+a {
+  color: white;
+}
+.title1 {
+    position: relative;
+    width: 200px;
+    padding: 10px 20px 10px 10px;
+    font-size: 20px;
+    position: relative;
+    color: #FFF;
+    background: #FF0000;
+}
+.title1:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #FF0000;
+    transform-origin: bottom left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+}
+
+.pmonth {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #a12b2c;
+  margin-right: 45px;
+}
+
+
+.calendar1 {
+  -webkit-box-shadow: 1px 1px 15px -7px #000000;
+  box-shadow: 1px 1px 17px -7px #000000;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  height: auto;
+  width: auto;
+}
+
+.film_roll_container {
+  position: relative;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+  .navbar-fixed-top {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-unit {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+
+.pevents {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 3rem;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #a12b2c;
+  font-size: 3vw;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.days {
+  padding: 10px 0;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 2vw;
+  color: #777;
+  cursor: pointer;
+}
+
+.days li:hover {
+  transition: all 0.2s;
+  color: #a12b2c;
+}
+
+.days li .active {
+  color: #a12b2c;
+  font-weight: bold;
+}
+
+li:visited{
+  font-weight:bold;
+}
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+
+  .weekdays li,
+  .days li {
+      width: 13.1%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .weekdays li,
+  .days li {
+      width: 12.5%;
+  }
+
+  .days li .active {
+      padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+
+  .weekdays li,
+  .days li {
+      width: 12.2%;
+  }
+}
+
+.boxevents {
+  background-color: #F5F5F5;
+  -webkit-box-shadow: 1px 1px 15px -7px #000000;
+  box-shadow: 1px 1px 12px -7px #424242;
+  border-radius: 5px;
+  display: inline-block;
+  padding:10px 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.peventstitle {
+  margin-top:5px;
+  font-family: sans-serif;
+  color: #a12b2c;
+  font-weight: bold;
+  font-size:1rem;
+  line-height: 140%;
+}
+
+.peventstime {
+  color: #212121;
+  font-family: sans-serif;
+  font-size:1rem;
+  margin-top:-10px;
+  font-weight: bold;
+}
+
+.peventslocation {
+  color: #212121;
+  font-family: sans-serif;
+  font-size:1rem;
+  margin-top:-10px;
+  margin-bottom: 1px;
+  font-weight: bold;
+}
+
+.bg:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fafafa;
+  opacity: 0.88;
+}
+
+.bg {
+  position: relative;
+}
+
+.film_roll_wrapper .active .bg:before  {
+  visibility: hidden;
+}
+
+.psubscribe {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.txtsubscribe {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  border: 0px;
+  padding: 10px 0px;
+  outline: none;
+  background: url(../Image/right.png) no-repeat 97.25% 15px transparent;
+  border: 0px;
+  border-bottom: 2px solid white;
+  margin-top:-5px;
+  width:300px;
+}

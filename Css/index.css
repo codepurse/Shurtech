@@ -1,0 +1,629 @@
+@media only screen and (min-width: 1200px) {
+  .con {
+    max-width: 1300px !important;
+  }
+  .consmall {
+    max-width: 1000px !important;
+  }
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.main {
+  background: #EB3349;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F45C43, #EB3349);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btnabout, .btncontact, .btnget {
+  transition: all 0.2s;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.pbe {
+  font-family: Raleway Medium;
+  color: white;
+  font-size: 3.5rem;
+  line-height: 120%;
+}
+
+.pbesub {
+  font-family: raleway;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+}
+
+.ppartner {
+  font-family: raleway medium;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.divcard {
+  background-color: white;
+  padding: 20px 20px;
+  width: 350px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 29px 7px -9px rgba(235, 51, 73, 0.45);
+  -moz-box-shadow: 0px 29px 7px -9px rgba(235, 51, 73, 0.45);
+  box-shadow: 0px 29px 7px -9px rgba(235, 51, 73, 0.45);
+}
+
+.pcheck {
+  font-family: Raleway;
+  font-weight: bold;
+  color: #37474F;
+  font-size: 1.2rem;
+}
+
+.pwarranty {
+  font-family: Raleway semibold;
+  font-size: 0.9rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  background: transparent;
+  font-family: Signika;
+  color: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #e62727;
+  font-family: Signika;
+  color: #fff;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  padding: 8px 36px;
+}
+
+.btn--primary:hover {
+  background: #ff1744;
+  color: white;
+}
+
+.btn--primary:active {
+  background: #ff1744;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn--inside {
+  margin-left: -80px;
+}
+
+.form__field {
+  width: 400px;
+  background: #ECEFF1;
+  color: #a3a3a3;
+  font: inherit;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 15px 18px;
+  margin-top: 15px;
+}
+
+.brk-btn {
+  position: relative;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid white;
+  padding: 0.5em 1em;
+}
+
+.brk-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #EB3349;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F45C43, #EB3349);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 0.3em;
+  right: 20%;
+  top: -0.21em;
+  transform: skewX(-45deg);
+  -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.brk-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #EB3349;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F45C43, #EB3349);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 0.3em;
+  left: 20%;
+  bottom: -0.25em;
+  transform: skewX(45deg);
+  -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.brk-btn:hover::before {
+  right: 80%;
+}
+
+.brk-btn:hover::after {
+  left: 80%;
+}
+
+.brk-btn:hover {
+  color: white !important;
+}
+
+.pprotect {
+  font-family: Raleway Medium;
+  font-size: 1.8rem;
+  color: cornflowerblue;
+}
+
+.pprotectsub {
+  font-family: Raleway;
+  color: #455A64;
+  width: 90%;
+}
+
+.phow {
+  font-family: Raleway medium;
+  font-size: 2rem;
+}
+
+.pnumber {
+  font-family: Raleway;
+  font-weight: bold;
+  color: #263238;
+  font-size: 3.5rem;
+  position: absolute;
+  top: -20px;
+  background-color: white;
+  padding: 5px 15px;
+  left: -10px;
+}
+
+.ptitle {
+  font-family: Raleway semibold;
+  color: cornflowerblue;
+  font-size: 0.9rem;
+  margin-left: 85px;
+}
+
+.ptitlesub {
+  font-family: Raleway;
+  color: #263238;
+  font-size: 0.9rem;
+  margin-top: 25px;
+}
+
+.psimple {
+  font-family: Raleway medium;
+  font-size: 1.8rem;
+  color: cornflowerblue;
+  transition: all 0.2s;
+}
+
+.ptitlesolutions {
+  font-family: Raleway Semibold;
+  color: #212121;
+  font-size: 0.9rem;
+}
+
+.ptitlesolutionssub {
+  font-family: Raleway;
+  color: #263238;
+  font-size: 0.8rem;
+  margin-top: -10px;
+}
+
+.divcheckout {
+  background-color: white;
+  padding: 20px 20px;
+  -webkit-box-shadow: 1px 1px 15px -7px #000000;
+  box-shadow: 1px 1px 17px -7px #000000;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.pcheckout {
+  font-family: Raleway;
+  font-weight: bold;
+  color: #212121;
+  font-size: 0.8rem;
+}
+
+.pcheckouttitle {
+  font-family: Raleway medium;
+  font-size: 0.8rem;
+  color: #263238;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.txt {
+  border: 1px solid lightgray;
+  color: #212121;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  padding: 8px 10px;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.btnpurchase {
+  font-family: raleway semibold;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: cornflowerblue;
+  border: 0px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.box1 {
+  padding: 15px 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding-bottom: 0px;
+}
+
+.pboxtitle {
+  font-family: raleway semibold;
+  color: cornflowerblue;
+  font-size: 0.9rem;
+}
+
+.pboxtitlesub {
+  font-family: raleway;
+  color: #263238;
+  font-size: 0.9rem;
+}
+
+.pgetstarted {
+  font-family: raleway;
+  font-weight: bold;
+  color: #212121;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.pgetstartedsub {
+  font-family: raleway medium;
+  color: #263238;
+  font-size: 0.9rem;
+  margin-top: -5px;
+}
+
+.btngetstarted {
+  font-family: Raleway medium;
+  color: white;
+  font-size: 0.9rem;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 25px;
+  padding: 10px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.pfooter {
+  font-family: Raleway semibold;
+  color: #263238;
+  font-size: 0.9rem;
+  position: relative;
+  transition: all 0.2s;
+  margin-right: 20px;
+}
+
+.pfooter:hover {
+  color: cornflowerblue;
+}
+
+.modal-header, .modbody {
+  background: #EB3349;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F45C43, #EB3349);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.try {
+  background: #EB3349;
+}
+
+.modal-title {
+  font-family: Raleway semibold;
+  font-size: 1.1rem;
+  color: White;
+}
+
+.penter {
+  font-family: Raleway semibold;
+  font-size: 0.9rem;
+  color: #263238;
+}
+
+.txtwarrantynumber {
+  font-family: Raleway semibold;
+  font-size: 1rem;
+  color: #212121;
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px 10px;
+  outline: none;
+  border: 1px solid lightgray;
+  margin-top: -5px;
+  width: 100%;
+  background: url(../Image/credit.png) no-repeat 97.25% 10px white;
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.btnproceed {
+  font-family: Raleway semibold;
+  font-size: 0.9rem;
+  color: white;
+  background-color: cornflowerblue;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 10px 0px;
+  width: 100px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.pimportant {
+  font-family: Raleway medium;
+  color: #a3a3a3;
+  font-size: 0.9rem;
+  margin-top: -5px;
+}
+
+.perror {
+  font-family: Raleway medium;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  margin-top: 18px;
+}
+
+.perrortitle {
+  font-family: Raleway Semibold;
+  color: white;
+  font-size: 2rem;
+}
+
+
+.full_modal-dialog {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.full_modal-content {
+  height: 100% !important;
+  min-height: 100% !important;
+  max-height: 100% !important;
+}
+
+.box2 {
+  border: 1px solid #e62727;
+  background-color: rgba(230,39,39, 0.1);
+  padding: 20px 40px;
+  border-radius: 5px;
+  width: 665px;
+  padding-bottom: 0px;
+}
+
+.diverror {
+  border: 1px solid #e62727;
+  background-color: rgba(230,39,39, 0.1);
+  padding: 20px 40px;
+}
+
+.pwarning {
+  font-family: Raleway medium;
+  color: #263238;
+  font-size: 0.9rem;
+}
+
+.pfills {
+  font-family: Raleway;
+  color: #424242;
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+
+.pinputtitle {
+  font-family: muli;
+  letter-spacing: -0.5px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #263238;
+}
+
+.boxinput {
+  width: 700px;
+  padding-bottom: 0px;
+}
+
+.txtfullname {
+  font-family: Raleway semibold;
+  color: #212121;
+  font-size: 1rem;
+  border: 1px solid #BDBDBD;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: -10px;
+  width: 100%;
+}
+
+.pesc {
+  font-family: raleway semibold;
+  color: #424242;
+  font-size: 0.8rem;
+}
+
+.preminder {
+  font-family: raleway semibold;
+  color: #212121;
+  font-size: 0.9rem;
+}
+
+.preminderdesc {
+  font-family: raleway medium;
+  color: #424242;
+  font-size: 0.9rem;
+  margin-top: -5px;
+}
+
+.btnsend {
+  font-family: raleway medium;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 10px;
+  transition: all 0.2s;
+  border: 0px;
+  background-color: cornflowerblue;
+  margin-top: 10px;
+}
+
+.ppayment {
+  font-family: Raleway semibold;
+  font-size: 1rem;
+  color: #e62727;
+}
+
+.pohsnap {
+  font-family: Raleway semibold;
+  font-size: 0.9rem;
+  color: #F45C43;
+  margin-top: -10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  font-family: Raleway semibold;
+  color: #212121;
+  font-size: 1rem;
+  border: 1px solid #BDBDBD;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: -5px;
+}
+
+.pnumberimage {
+  font-family: Raleway semibold;
+  color: #212121;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.pitem {
+  font-family: Raleway medium;
+  color: cornflowerblue;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.psome {
+  font-family: Raleway semibold;
+  color: #37474F;
+  font-size: 0.9rem;
+}
+
+.boxcontact {
+  background-color: white;
+  padding: 40px 30px;
+  -webkit-box-shadow: 1px 1px 15px -7px #000000;
+  box-shadow: 1px 1px 17px -7px #000000;
+  border-radius: 10px;
+  width: 380px;
+}
+
+.txtname, .txtemail, .txtmessage {
+  font-family: Raleway medium;
+  color: #37474F;
+  font-size: 0.8rem;
+  background-color: transparent;
+  border: 1px solid cornflowerblue;
+  padding: 8px 10px;
+  width: 100%;
+}
+
+.pabout {
+  font-family: Raleway semibold;
+  color: white;
+  font-size: 1rem;
+}
+
+.pfooter {
+  font-family: Raleway semibold;
+  color: white;
+  font-size: 0.9rem;
+}

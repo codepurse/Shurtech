@@ -1,0 +1,284 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+    .consmall {
+        max-width: 1000px !important;
+    }
+    .conxsmall {
+        max-width: 900px !important;
+    }
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+.btnabout, .btncontact, .btnget {
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    position: relative;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btnabout:hover, .btncontact:hover, .btnget:hover {
+    color: #EB3349 !important;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #EB3349;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.consearch {
+    background-color: #EFF3F6;
+}
+
+.phello {
+    font-family: Raleway;
+    color: #37474F;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.txtask {
+    font-family: Raleway medium;
+    width: 700px;
+    border: 0px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btnsearch {
+    font-family: Raleway medium;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 20px;
+    border: 0px;
+    background-color: #EB3349;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -92px;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    margin-top: 5px;
+}
+
+.pchoose {
+    font-family: Raleway medium;
+    color: #37474F;
+    font-size: 0.9rem;
+    margin-top: 25px;
+}
+
+.box {
+    padding: 20px 20px;
+    -webkit-box-shadow: 1px 1px 15px -7px #000000;
+    box-shadow: 1px 1px 17px -7px #000000;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #FAFAFA;
+}
+
+.box:hover {
+    border: 1px solid #EB3349;
+    background-color: white;
+}
+
+.pcategoriestitle {
+    font-family: Raleway semibold;
+    color: #37474F;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.ptitlebox {
+    font-family: Raleway;
+    color: #37474F;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.ptitleboxsub {
+    font-family: Raleway medium;
+    color: #9E9E9E;
+    font-size: 0.9rem;
+    margin-top: 0px;
+}
+
+h2 {
+    margin: 20px auto 80px;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+details {
+    width: 75%;
+    min-height: 5px;
+    max-width: 700px;
+    padding: 30px 70px 30px 45px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 22px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+details+details {
+    margin-top: 20px;
+}
+
+details[open] {
+    min-height: 50px;
+    background-color: #f6f7f8;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+}
+
+details p {
+    color: #96999d;
+    font-weight: 300;
+}
+
+summary {
+    font-family: Raleway semibold;
+    font-size: 1.1rem;
+    color: #212121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+summary:focus {
+    outline: none;
+    color: #EB3349;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+.control-icon {
+    fill: #EB3349;
+    transition: .3s ease;
+    pointer-events: none;
+}
+
+.control-icon-close {
+    display: none;
+}
+
+details[open] .control-icon-close {
+    display: initial;
+    transition: .3s ease;
+}
+
+details[open] .control-icon-expand {
+    display: none;
+}
+
+details[open] summary:hover::after {
+    animation: pulse 1s ease;
+}
+
+@keyframes pulse {
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.panswer {
+    font-family: Raleway medium;
+    font-size: 1rem;
+    color: #37474F;
+    margin-top: 10px;
+}
+
+.boxcontact {
+    background-color: transparent;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 40px 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.boxcontact:hover {
+    background-color: #F5F5F5;
+}
+
+.pnumber {
+    font-family: Raleway semibold;
+    color: #37474F;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.pwe {
+    font-family: Raleway semibold;
+    color: #9E9E9E;
+    font-size: 1rem;
+    margin-top: -5px;
+}
+
+.try {
+    background: #EB3349;
+}
+
+.pabout {
+    font-family: Raleway semibold;
+    color: white;
+    font-size: 1rem;
+}
+
+.pfooter {
+    font-family: Raleway semibold;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.pbesub {
+    font-family: raleway;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.img-fluid {
+    transition: all 0.2s;
+}

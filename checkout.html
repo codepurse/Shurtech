@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/bootstrap-combobox.css' rel='stylesheet' type='text/css'>
+    <link href='Css/checkout.css' rel='stylesheet' type='text/css'>
+    <script src='Script\bootstrap.min.js'></script>
+    <script src='Script\card.js'></script>
+    <link rel="icon" type="image/png" href="Image/logosmall.png">
+    <title>Shurtech - Checkout</title>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="container">
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-lg-12 text-center">
+                    <img src="Image/shurtech_logo_white.png" class="img-fluid" style="width: 150px">
+                    <p class="pshurtech">Shurtech gadget protection</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container con conprotect">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-12 text-center">
+                <p class="pyour">Protect your device</p>
+                <p class="psecure">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
+                    incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6">
+                <p class="pwarranty">Warranty protections</p>
+                <select class="input-large form-control" style="margin-top: -5px;">
+                    <option value="">Select a plan</option>
+                    <option value="AL">Extended Warranty</option>
+                </select>
+                <p class="pwarranty">Device category</p>
+                <select class="input-large form-control" style="margin-top: -5px;">
+                    <option value="">Select a plan</option>
+                    <option value="AL">Extended Warranty</option>
+                </select>
+            </div>
+            <div class="col-lg-6">
+                <p class="pwarranty">Device brand</p>
+                <select class="input-large form-control" style="margin-top: -5px;">
+                    <option value="">Select a plan</option>
+                    <option value="AL">Extended Warranty</option>
+                </select>
+                <p class="pwarranty">Device model</p>
+                <select class="input-large form-control" style="margin-top: -5px;">
+                    <option value="">Select a plan</option>
+                    <option value="AL">Extended Warranty</option>
+                </select>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-12">
+                <p class="pprice">Price: 0.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="pwarranty">Serial/IMEI/Receipt#</p>
+                <input type="text" class="txtfullname">
+                <p class="pwarranty">Purchase date</p>
+                <input type="text" class="txtfullname">
+                <p class="pwarranty">Number</p>
+                <input type="text" class="txtfullname">
+            </div>
+            <div class="col-lg-6">
+                <p class="pwarranty">Fullname</p>
+                <input type="text" class="txtfullname">
+                <p class="pwarranty">Email address</p>
+                <input type="email" class="txtfullname">
+                <input type="button" class="btnnext" value="Next">
+            </div>
+        </div>
+    </div>
+
+    <div class="container con concredit" style="display:none;">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-12 text-center">
+                <p class="pyour">Your payment details</p>
+                <p class="psecure">100% secure <img src="Image/padlock.png" class="img-fluid" style="width: 15px;"></p>
+                <div class='card-wrapper'></div>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center" style="margin-top: 40px;">
+            <div class="col-lg-4">
+                <div class="divinfo" style="margin: auto;">
+                    <form>
+                        <p class="pcreditname">First name</p>
+                        <input type="text" class="txtname" name="first-name" placeholder="E.g Alfon">
+                        <p class="pcreditname" style="margin-top: 18px;">Last name</p>
+                        <input type="text" class="txtname" name="last-name" placeholder="E.g Alfon">
+                        <p class="pcreditname" style="margin-top: 18px;">Card number</p>
+                        <input type="text" class="txtname" name="number" placeholder="E.g Alfon">
+                        <div class=row style="margin-top: 18px;">
+                            <div class="col-lg-6">
+                                <p class="pcreditname">Date expiration</p>
+                                <input type="text" class="txtname" name="expiry" placeholder="E.g Alfon">
+                            </div>
+                            <div class="col-lg-6">
+                                <p class="pcreditname">CVC</p>
+                                <input type="text" class="txtname" name="cvc" placeholder="E.g Alfon">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center" style="margin-top: 40px;padding-bottom: 40px;">
+            <div class="col-lg-12 text-center">
+                <label class="pplease">Please add your payment method to complete your order and get card as soon as
+                    possible. We will no <span style="font-weight:bold;font-size: 0.9rem;">distribute</span> or <span
+                        style="font-weight:bold;font-size: 0.9rem;">save</span> your card information.</label>
+                <p></p><input type="button" class="btnpay" value="Pay 999.99&#8369;">
+                <div class="form-inline mx-auto d-block" style="margin-top: 25px;">
+                    <img src="Image/visa1.png" class="img-fluid" style="margin-right: 10px;">
+                    <img src="Image/mastercard.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var card = new Card({
+        form: 'form',
+        container: '.card-wrapper',
+
+        formSelectors: {
+            nameInput: 'input[name="first-name"], input[name="last-name"]'
+        }
+    });
+
+    $(".btnnext").click(function () {
+        $(".concredit").css("display","block");
+        $(".conprotect").css("display","none");
+    });
+</script>
+
+</html>

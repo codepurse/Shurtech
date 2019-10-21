@@ -1,0 +1,86 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1300px !important;
+    }
+    .consmall {
+        max-width: 1000px !important;
+    }
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.btnabout, .btncontact, .btnget {
+    transition: all 0.2s;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    position: relative;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btnabout:hover, .btncontact:hover, .btnget:hover {
+    color: #EB3349 !important;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #EB3349;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.ptitle {
+    font-family: Raleway;
+    color: #212121;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.ptitlesub {
+    font-family: Raleway medium;
+    color: #455A64;
+    font-size: 0.9rem;
+    line-height: 170%;
+}
+
+.pwe {
+    font-family: Raleway semibold;
+    color: #424242;
+    font-size: 1rem;
+    font-size: 0.9rem;
+}
+
+.pservicetitle {
+    font-family: Raleway;
+    color: #212121;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.pcopy {
+    font-family: Raleway medium;
+    color: #424242;
+    font-size: 0.9rem;
+}
+
+.pfooter {
+    font-family: Raleway semibold;
+    color: #212121;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,127 @@
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1000px !important;
+    }
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.main {
+    background: #EB3349;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F45C43, #EB3349);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F45C43, #EB3349);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px 0px;
+}
+
+.pshurtech {
+    font-family: Raleway medium;
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.pyour {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #263238;
+}
+
+.psecure {
+    font-family: raleway semibold;
+    color: #a3a3a3;
+    font-size: 0.9rem;
+    margin-top: -10px;
+}
+
+.pcreditname {
+    font-family: Raleway;
+    font-weight: bold;
+    color: #424242;
+    font-size: 0.8rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #dce3e6;
+    opacity: 1; /* Firefox */
+  }
+  
+
+.txtname {
+    font-family: Raleway semibold;
+    color: #212121;
+    background-color: #fbfbfd;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    padding: 18px 10px;
+    outline: none;
+    border: 2px solid #dce3e6;
+    margin-top: -5px;
+    width: 100%;
+}
+
+.pplease {
+    font-family: Raleway medium;
+    color: #212121;
+    width: 50%;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.btnpay {
+    font-family: Raleway semibold;
+    color: white;
+    border: 0px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    padding: 15px 0px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    box-shadow: 0px 10px 20px rgba(100, 149, 237, 0.4);
+    color: #fff;
+}
+
+.pwarranty {
+    font-family: Raleway medium;
+    color: #212121;
+    font-size: 0.9rem;
+}
+
+.pprice {
+    font-family: Raleway semibold;
+    font-size: 1.5rem;
+    color: #212121;
+}
+
+.txtfullname {
+    font-family: Raleway semibold;
+    color: #212121;
+    font-size: 1rem;
+    border: 1px solid #BDBDBD;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: -10px;
+    width: 100%;
+  }
+
+  .btnnext {
+      font-family: Raleway semibold;
+      color: white;
+      border: 0px;
+      padding: 5px 0px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: cornflowerblue;
+      margin-top: 30px;
+  }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/location.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <script src='Script\bootstrap.min.js'></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid h-100" style="padding-left: 0px;">
+        <div class="row h-100">
+            <div class="col-lg-5" style="padding-right: 0px;">
+                <div class="divsearch">
+                    <input type="text" class="txtlocation" placeholder="Search location">
+                    <img src="Image/menu.png" class="imgmenu">
+                </div>
+
+                <div class="divlocation">
+                    <div class="location1">
+                        <p class="plocation">1. 23 R Fernandez Street</p>
+                        <p class="ptime">Open until 9pm</p>
+                        <p class="pcell">(+02)5158598</p>
+                    </div>
+                    <div class="location1" style="margin-top: 40px;">
+                        <p class="plocation">2. 40 J. Llanes Street, Escoda</p>
+                        <p class="ptime">Open until 5pm</p>
+                        <p class="pcell">(+02)4718596</p>
+                    </div>
+                    <div class="location1" style="margin-top: 40px;">
+                        <p class="plocation">3. 21 Salazar Drive Balumbato Balintawak 1100</p>
+                        <p class="ptime">Open until 9pm</p>
+                        <p class="pcell">(+02)5157845</p>
+                    </div>
+                    <div class="location1" style="margin-top: 40px;">
+                        <p class="plocation">4. 589 Pag-Asa Street</p>
+                        <p class="ptime">Open until 5pm</p>
+                        <p class="pcell">(+02)4714523</p>
+                    </div>
+                    <div class="location1" style="margin-top: 40px;">
+                        <p class="plocation">5. 2214 Tolentino Street 1300</p>
+                        <p class="ptime">Open until 9pm</p>
+                        <p class="pcell">(+02)5152315</p>
+                    </div>
+                    <div class="location1" style="margin-top: 40px;">
+                        <p class="plocation">5. 2214 Tolentino Street 1300</p>
+                        <p class="ptime">Open until 9pm</p>
+                        <p class="pcell">(+02)5152315</p>
+                    </div>
+                    <div class="location1" style="margin-top: 40px;">
+                        <p class="plocation">5. 2214 Tolentino Street 1300</p>
+                        <p class="ptime">Open until 9pm</p>
+                        <p class="pcell">(+02)5152315</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div id="mapid">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var mymap = L.map('mapid').setView([14.5624078, 121.0122034], 16);
+
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 19,
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012',
+        id: 'mapbox.streets',
+        subdomains: 'abcd'
+    }).addTo(mymap);
+
+    L.marker([14.5624078, 121.0122034]).addTo(mymap)
+        .bindPopup("Shurtech").openPopup();
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent("You clicked the map at " + e.latlng.toString())
+            .openOn(mymap);
+    }
+
+    mymap.on('click', onMapClick);
+</script>
+<!-- 
+                <div class="divlocation">
+                    <div class="location1">
+                        <p class="plocation">1. 23 R Fernandez Street</p>
+                        <p class="ptime">Open until 9pm</p> <img src="" <p class="pcell">(+02)5158598</p>
+                    </div>
+                    <div class="location1" style="margin-top: 40px;">
+                        <p class="plocation">2. 40 J. Llanes Street, Escoda</p>
+                        <p class="ptime">Open until 5pm</p>
+                        <p class="pcell">(+02)4718596</p>
+                    </div>
+                    <div class="location1" style="margin-top: 40px;">
+                        <p class="plocation">3. 21 Salazar Drive Balumbato Balintawak 1100</p>
+                        <p class="ptime">Open until 9pm</p>
+                        <p class="pcell">(+02)5157845</p>
+                    </div>
+                    <div class="location1" style="margin-top: 40px;">
+                        <p class="plocation">4. 589 Pag-Asa Street</p>
+                        <p class="ptime">Open until 5pm</p>
+                        <p class="pcell">(+02)4714523</p>
+                    </div>
+                    <div class="location1" style="margin-top: 40px;">
+                        <p class="plocation">5. 2214 Tolentino Street 1300</p>
+                        <p class="ptime">Open until 9pm</p>
+                        <p class="pcell">(+02)5152315</p>
+                    </div>
+                </div> -->
+
+</html>
