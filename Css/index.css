@@ -5,6 +5,39 @@
   .consmall {
     max-width: 1000px !important;
   }
+  .colbox {
+    margin-top: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .pbe {
+    font-size: 2rem !important;
+  }
+  .divcard {
+    -webkit-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 10px 10px 36px 0px rgba(0, 0, 0, 0.35);
+  }
+  .rowhowitworks {
+    margin-top: 150px !important;
+  }
+  .pprotectsub {
+    width: 100% !important;
+  }
+  .box {
+    margin-top: 20px !important;
+  }
+  .rowcard {
+    margin-top: 30px !important;
+  }
+  .colcapa {
+    margin-top: 30px !important;
+  }
+  .rowsteps {
+    margin-top: 10px !important;
+  }
+
 }
 
 body, html {
@@ -72,9 +105,6 @@ a:hover:after {
   padding: 20px 20px;
   width: 350px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 29px 7px -9px rgba(235, 51, 73, 0.45);
-  -moz-box-shadow: 0px 29px 7px -9px rgba(235, 51, 73, 0.45);
-  box-shadow: 0px 29px 7px -9px rgba(235, 51, 73, 0.45);
 }
 
 .pcheck {
@@ -447,7 +477,6 @@ a:hover:after {
   font-size: 2rem;
 }
 
-
 .full_modal-dialog {
   width: 100% !important;
   height: 100% !important;
@@ -467,7 +496,7 @@ a:hover:after {
 
 .box2 {
   border: 1px solid #e62727;
-  background-color: rgba(230,39,39, 0.1);
+  background-color: rgba(230, 39, 39, 0.1);
   padding: 20px 40px;
   border-radius: 5px;
   width: 665px;
@@ -476,7 +505,7 @@ a:hover:after {
 
 .diverror {
   border: 1px solid #e62727;
-  background-color: rgba(230,39,39, 0.1);
+  background-color: rgba(230, 39, 39, 0.1);
   padding: 20px 40px;
 }
 
