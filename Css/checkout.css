@@ -4,6 +4,12 @@
     }
 }
 
+@media only screen and (max-width: 411px) {
+    .concredit, .conprotect {
+        padding-bottom: 20px !important;
+    }
+}
+
 body, html {
     width: 100%;
     height: 100%;

@@ -10,6 +10,31 @@
     }
 }
 
+@media only screen and (max-width: 411px) {
+    .phello {
+        font-size: 1.5rem !important;
+    }
+    .txtask {
+        width: 100% !important;
+    }
+    .box2, .box3 {
+        margin-top: 10px !important;
+    }
+    .ptitleboxsub {
+        width: 100% !important;
+    }
+    details {
+        width: 100% !important;
+        padding: 20px !important;
+    }
+    .colfooter {
+        text-align: left !important;
+    }
+    .try {
+        margin-top: 40px !important;
+    }
+}
+
 body, html {
     width: 100%;
     height: 100%;

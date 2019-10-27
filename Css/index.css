@@ -37,7 +37,12 @@
   .rowsteps {
     margin-top: 10px !important;
   }
-
+  .colfooter {
+    text-align: left !important;
+  }
+  .try {
+    margin-top: 40px !important;
+  }
 }
 
 body, html {
