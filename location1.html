@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/location1.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <script src='Script\bootstrap.min.js'></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top"
+            style="border-bottom: 1px solid lightgray;background-color: white;">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-brand" href="#">
+                <a href="#"><img src="Image/logo_banner.png" class="img-fluid imglogo" style="width: 180px;"></a>
+            </nav>
+            <div class="collapse navbar-collapse" id="collapse">
+                <div class="col2 ml-auto">
+                    <ul class="nav navbar-nav">
+                        <li><a class="nav-link btnabout"
+                                style="margin-right: 20px;color:#263238;font-family: Muli Semibold;font-size: 15px;"
+                                href="package.html">About</a></li>
+                        <li><a class="nav-link btncontact"
+                                style="margin-right: 20px;color:#263238 ;font-family: Muli Semibold;font-size: 15px;"
+                                href="contact.html" data-toggle="modal" data-target="#exampleModal3">Contact</a>
+                        </li>
+                        <li><a class="nav-link btnget"
+                                style="margin-right: 20px;color:#263238;font-family: Muli Semibold;font-size: 15px;"
+                                href="contact.html" data-toggle="modal" data-target="#exampleModal2">Get Started</a>
+                        </li>
+                        <li><a class="nav-link btnget"
+                                style="margin-right: 20px;color:#263238;font-family: Muli Semibold;font-size: 15px;"
+                                href="contact.html" data-toggle="modal" data-target="#exampleModal">Claim
+                                Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row h-100" style="margin-top: 3.7%;">
+            <div class="col-lg-3 text-center col-md-5 col-sm-5 collocation" style="padding: 15px 15px;">
+                <input type="text" class="txtsearch" id="txtsearch" placeholder="Search here.." onkeyup="myFunction()">
+                <table class="table table-responsive table-borderless" id="table"
+                    style="text-align:left !important;margin-top:-10px;">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td onclick="gotocountry('af')"> 1. Alabang, Muntinlupa<br><span
+                                    style="margin-left: 15px;color: #9E9E9E;">Number:
+                                </span><span class="spannumber">8556-3598</span><br>
+                                <div style="margin-top: 15px;margin-left: 15px;">
+                                    <span style="color: #9E9E9E;">Address: </span><span style="color: #9E9E9E;"><span
+                                            style="color: #263238;font-weight: bold;">2nd Flr.
+                                            Sycamore ARCS 1 Building,</span> Buencamino Street cor.
+                                        Alabang-Zapote Road, Alabang, Muntinlupa City 1780</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td onclick="gotocountry('tn')">2. BGC, Taguig<br><span
+                                    style="margin-left: 15px;color: #9E9E9E;">Number:
+                                </span><span class="spannumber">8556-3598</span><br>
+                                <div style="margin-top: 15px;margin-left: 15px;">
+                                    <span style="color: #9E9E9E;">Address: </span><span style="color: #9E9E9E;"><span
+                                            style="color: #263238;font-weight: bold;">GF Citi Plaza,</span> 34th Street
+                                        cor. Lane D, Bonifacio Global City, Taguig</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3. Calamba, Laguna<br><span style="margin-left: 15px;color: #9E9E9E;">Number:
+                                </span><span class="spannumber">8556-3598</span><br>
+                                <div style="margin-top: 15px;margin-left: 15px;">
+                                    <span style="color: #9E9E9E;">Address: </span><span style="color: #9E9E9E;"><span
+                                            style="color: #263238;font-weight: bold;">Unit 201-203,</span> SQA
+                                        Corporation Center, Baranggay 1, National Highway Crossing, Calamba City, Laguna
+                                        4027</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4. Cebu IT Park<br><span style="margin-left: 15px;color: #9E9E9E;">Number:
+                                </span><span class="spannumber">8556-3598</span><br>
+                                <div style="margin-top: 15px;margin-left: 15px;">
+                                    <span style="color: #9E9E9E;">Address: </span><span style="color: #9E9E9E;"><span
+                                            style="color: #263238;font-weight: bold;">Unit 203 TGU Tower,</span> Block
+                                        1, Lots 6-7, Phase 1, Asiatown, IT Park Apas, Cebu City, Cebu 6000</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5. Makati Filomena<br><span style="margin-left: 15px;color: #9E9E9E;">Number:
+                                </span><span class="spannumber">8556-3598</span><br>
+                                <div style="margin-top: 15px;margin-left: 15px;">
+                                    <span style="color: #9E9E9E;">Address: </span><span style="color: #9E9E9E;"><span
+                                            style="color: #263238;font-weight: bold;">6F Filomena Building,</span> #104
+                                        Amorsolo St., Legaspi Village, Makati, Metro Manila 1229</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a onclick="gotocountry('tn')"> Tunisia</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-9 col-md-7 col-sm-7" id = "colmap">
+                <div id="mapid" style="position:fixed;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    var mymap = L.map('mapid').setView([14.5624078, 121.0122034], 16);
+
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 19,
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012',
+        id: 'mapbox.streets',
+        subdomains: 'abcd'
+    }).addTo(mymap);
+
+    L.marker([14.5624078, 121.0122034]).addTo(mymap)
+        .bindPopup("Shurtech").openPopup();
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("txtsearch");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("table");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    var gotocountry = function (c) {
+
+        if (c == 'af')
+            mymap.setView(new L.LatLng(34.5333, 69.1333), 6);
+        if (c == 'tn')
+            mymap.setView(new L.LatLng(34, 9), 6);
+        return;
+    };
+
+    
+    $(window).resize(function () {
+        var width = $(window).width();
+        if (width < 575) {
+            var element = document.getElementById("colmap");
+            element.classList.add("order-first");
+        }
+        else {
+            var element = document.getElementById("colmap");
+            element.classList.remove("order-first");
+        }
+    });
+
+</script>
+<script>
+
+</script>
+
+</html>
